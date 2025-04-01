@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Lesley's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/265a4c6947.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/LESLEY.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li> 
+                <li><a href="gallery.html">Gallery</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+
+            <div class="language-switcher">
+                <select id="language-select">
+                    <option value="en"><img src="images/united-kingdom.png"> English</option>
+                    <option value="fr"><img src="images/france.png"> French</option>
+                    <option value="es"><img src="images/spain.png">Spanish</option>
+                    <option value="ar"><img src="images/qatar.png">Arabic</option>
+                    <option value="de"><img src="images/germany.png">German</option>
+                    <option value="pl"><img src="images/poland.png">Polish</option>
+                </select>
+            </div>   
+        
+        
+        </nav>
+
+        <div class="header-text">
+            <p class="anim" id="paragraph-en" class="anim">Computer Engineering Student</p>
+            <p class="anim" id="paragraph-fr" style="display: none;">Étudiant en génie informatique</p>
+            <p class="anim" id="paragraph-es" style="display: none;">Estudiante de Ingeniería Informática</p>
+            <p class="anim" id="paragraph-ar" style="display: none;">طالب هندسة الحاسوب</p>
+            <p class="anim" id="paragraph-de" style="display: none;">Student der Informatik</p>
+            <p class="anim" id="paragraph-pl" style="display: none;">Student inżynierii komputerowej</p>
+            <h1 class="anim" id="header-en"> Hi, I'm <span>Lesley </span><br>Sango From Ghana</h1>
+            <h1 class="anim" id="header-fr" style="display: none;">Salut je suis <span>Lesley</span><br>Sango du Ghana</h1>
+            <h1 class="anim" id="header-es" style="display: none;">Hola yo soy <span>Lesley</span><br>Sango de Ghana</h1>
+            <h1 class="anim" id="header-ar" style="display: none;">أهلا أنا <span>ليزلي</span><br>سانجو من غانا</h1>
+            <h1 class="anim" id="header-de" style="display: none;">Hallo ich bin <span>Lesley</span><br>Sango aus Ghana</h1>
+            <h1 class="anim" id="header-pl" style="display: none;">Cześć jestem <span>Lesley</span><br>Sango z Ghany</h1>
+        </div>
+    </div>
+    
+    
+    
+    
+</div>
+<!------------------about----------------->
+<div class="about" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/gallery-image1.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title" id="header-en">About Me</h1>
+                <h1 class="sub-title" id="header-fr" style="display: none;">Sur moi</h1>
+                <h1 class="sub-title" id="header-es" style="display: none;">Acerca de mí</h1>
+                <h1 class="sub-title" id="header-ar" style="display: none;">ْعَنِّي</h1>
+                <h1 class="sub-title" id="header-de" style="display: none;">Über mich</h1>
+                <h1 class="sub-title" id="header-pl" style="display: none;">O mnie</h1>
+                <p id="about-text-en">I am dedicated to bridging the realms of IT and customer service, 
+                striving for excellence in technical support, customer satisfaction, 
+                collaboration, innovation, and a positive work culture within a 
+                forward-thinking organization.</p>
+                <p id="about-text-fr" style="display: none;">Je me consacre à relier les domaines de l'informatique et du service client,
+                rechercher l'excellence en matière de support technique, de satisfaction client,
+                collaboration, innovation et culture de travail positive au sein d'un
+                organisation avant-gardiste.</p>
+                <p id="about-text-es" style="display: none;">Me dedico a unir los ámbitos de TI y servicio al cliente,
+                esforzarnos por alcanzar la excelencia en soporte técnico, satisfacción del cliente,
+                colaboración, innovación y una cultura de trabajo positiva dentro de una
+                organización con visión de futuro.</p>
+                <p id="about-text-ar" style="display: none;">أنا ملتزم بالربط بين مجالات تكنولوجيا المعلومات وخدمة العملاء،
+                نسعى جاهدين للتميز في الدعم الفني، ورضا العملاء،التعاون والابتكار وثقافة العمل الإيجابية داخل
+                منظمة ذات تفكير تقدمي.</p>
+                <p id="about-text-de" style="display: none;">Mein Ziel ist es, die Bereiche IT und Kundenservice zu verbinden.
+                Streben nach Exzellenz in technischer Unterstützung, Kundenzufriedenheit,
+                Zusammenarbeit, Innovation und eine positive Arbeitskultur innerhalb eines
+                zukunftsorientierte Organisation.</p>
+                <p id="about-text-pl" style="display: none;">Zależy mi na łączeniu sfery IT i obsługi klienta,
+                dążenie do doskonałości w zakresie wsparcia technicznego, zadowolenia klientów,
+                współpracę, innowacyjność i pozytywną kulturę pracy w firmie
+                organizacja myśląca przyszłościowo.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')" id="paragraph-en">Skills</p>
+                    <p class="tab-links active-link" onclick="opentab('skills')" id="paragraph-fr" style="display: none;">Compétences</p>
+                    <p class="tab-links active-link" onclick="opentab('skills')" id="paragraph-es" style="display: none;">Habilidades</p>
+                    <p class="tab-links active-link" onclick="opentab('skills')" id="paragraph-ar" style="display: none;">مهارات</p>
+                    <p class="tab-links active-link" onclick="opentab('skills')" id="paragraph-de" style="display: none;">Fähigkeiten</p>
+                    <p class="tab-links active-link" onclick="opentab('skills')" id="paragraph-pl" style="display: none;">Umiejętności</p>
+                    <p class="tab-links" onclick="opentab('experience')" id="paragraph-en">Experience</p>
+                    <p class="tab-links" onclick="opentab('experience')" id="paragraph-fr"style="display: none;">Expérience</p>
+                    <p class="tab-links" onclick="opentab('experience')" id="paragraph-es"style="display: none;">Experiencia</p>
+                    <p class="tab-links" onclick="opentab('experience')" id="paragraph-ar"style="display: none;">خبرة</p>
+                    <p class="tab-links" onclick="opentab('experience')" id="paragraph-de"style="display: none;">Erfahrung</p>
+                    <p class="tab-links" onclick="opentab('experience')" id="paragraph-pl"style="display: none;">Doświadczenie</p>
+                    <p class="tab-links" onclick="opentab('education')" id="paragraph-en">Education</p>
+                    <p class="tab-links" onclick="opentab('education')" id="paragraph-fr" style="display: none;">Éducation</p>
+                    <p class="tab-links" onclick="opentab('education')" id="paragraph-es" style="display: none;">Educación</p>
+                    <p class="tab-links" onclick="opentab('education')" id="paragraph-ar" style="display: none;">تعليم</p>
+                    <p class="tab-links" onclick="opentab('education')" id="paragraph-de" style="display: none;">Ausbildung</p>
+                    <p class="tab-links" onclick="opentab('education')" id="paragraph-pl" style="display: none;">Edukacja</p>
+
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Microsoft Office</span><br>Excel, Word, Access</li>
+                        <li><span>Programming Languages </span><br>C++, Python, Javascript</li>
+                        <li><span>Adobe creative suite</span><br>Phtoshop, Illustrator,After Effects</li>
+                        <li><span>Solid Analytical Skills</span><br>Multi-Tasking</li>
+
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2022 - 2023</span><br>Data Analyst At WaterFront All Services Ltd</li>
+                        <li><span>2021 - 2022 </span><br>Customer Service at Novo</li>
+                        <li><span>2021 - 2022</span><br>Data Entry Operator at Freelancer.com</li>
+                        
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022 - Present</span><br>Wrocławska Akademia Biznesu w Naukach Stosowanych In Poland</li>
+                        <li><span>2017 - 2021 </span><br>High School Diploma, Mesaieed International School In Qatar</li>
+                         
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>
+</div>
+<!--------------------services------------------->
+<div id="services">
+    <div class="container">
+       <h1 class="sub-title" id="header-en">My services</h1> 
+       <h1 class="sub-title" id="header-fr" style="display: none;">Mes services</h1>
+       <h1 class="sub-title" id="header-es" style="display: none;">Mis servicios</h1>
+       <h1 class="sub-title" id="header-ar" style="display: none;">خدماتي</h1>
+       <h1 class="sub-title" id="header-de" style="display: none;">Meine Dienstleistungen</h1>
+       <h1 class="sub-title" id="header-pl" style="display: none;">Moje usługi</h1>
+       <div class="services-list">
+        <div>
+            <i class="fa-solid fa-code"></i>
+            <H2 id="header-en">Web Design</H2>
+            <H2 id="header-fr" style="display: none;">Création de sites web</H2>
+            <H2 id="header-es" style="display: none;">Diseño web</H2>
+            <H2 id="header-ar" style="display: none;">تصميم الويب</H2>
+            <H2 id="header-de" style="display: none;">Web Design</H2>
+            <H2 id="header-pl" style="display: none;">Projektowanie stron</H2>
+            <p id="paragraph-en">Skilled in HTML, CSS, and JavaScript, I specialize in creating visually appealing and user-centric web experiences, 
+            collaborating cross-functionally to drive engagement and innovation.</p>
+            <p id="paragraph-fr" style="display: none;">Compétent en HTML, CSS et JavaScript, je me spécialise dans la création d'expériences Web visuellement attrayantes et centrées sur l'utilisateur, 
+            en collaborant de manière interfonctionnelle pour stimuler l'engagement et l'innovation.</p>
+            <p id="paragraph-es" style="display: none;">Con conocimientos de HTML, CSS y JavaScript, me especializo en la creación de experiencias web visualmente atractivas y centradas en el usuario, 
+            colaborando de forma multifuncional para impulsar la participación y la innovación.</p>
+            <p id="paragraph-ar" style="display: none;">ماهر في HTML وCSS وJavaScript، وأنا متخصص في إنشاء تجارب ويب جذابة بصريًا وتتمحور حول المستخدم، والتعاون عبر الوظائف لتعزيز المشاركة والابتكار.</p>
+            <p id="paragraph-de" style="display: none;">Ich verfüge über Kenntnisse in HTML, CSS und JavaScript und bin auf die Erstellung optisch ansprechender und benutzerzentrierter Web-Erlebnisse spezialisiert, 
+            wobei ich funktionsübergreifend zusammenarbeite, um Engagement und Innovation voranzutreiben.</p>
+            <p id="paragraph-pl" style="display: none;">Biegle posługuję się HTML, CSS i JavaScript. Specjalizuję się w tworzeniu atrakcyjnych wizualnie i zorientowanych na użytkownika doświadczeń internetowych, 
+            współpracując międzyfunkcyjnie w celu zwiększenia zaangażowania i innowacji.</p>
+            
+            <a href="#">Learn More</a>
+        </div>
+        <div>
+            <i class="fa-solid fa-chart-pie"></i>
+            <H2 id="header-en">Data Analyst</H2>
+            <H2 id="header-fr">Analyste de données</H2>
+            <H2 id="header-es">Analista de datos</H2>
+            <H2 id="header-ar">محلل بيانات</H2>
+            <H2 id="header-de">Datenanalyst</H2>
+            <H2 id="header-pl">Analityk danych</H2>
+            <p id="paragraph-en">Proficient in data analysis tools such as Python and SQL, I leverage analytical skills to derive actionable insights, optimize processes, and inform strategic decision-making through data-driven solutions.</p>
+            <p id="paragraph-fr">Maîtrisant les outils d'analyse de données tels que Python et SQL, j'exploite mes compétences analytiques pour obtenir des informations exploitables, optimiser les processus et éclairer la prise de décision stratégique grâce à des solutions basées sur les données.</p>
+            <p id="paragraph-es">Competente con herramientas de análisis de datos como Python y SQL, aprovecho mis habilidades analíticas para obtener conocimientos prácticos, optimizar procesos e informar la toma de decisiones estratégicas a través de soluciones basadas en datos.</p>
+            <p id="paragraph-ar">من خلال إتقان أدوات تحليل البيانات مثل Python وSQL، أستفيد من المهارات التحليلية لاستخلاص رؤى قابلة للتنفيذ وتحسين العمليات وإبلاغ عملية صنع القرار الاستراتيجي من خلال الحلول المستندة إلى البيانات.</p>
+            <p id="paragraph-de">Ich beherrsche Datenanalysetools wie Python und SQL und nutze analytische Fähigkeiten, um umsetzbare Erkenntnisse abzuleiten, Prozesse zu optimieren und strategische Entscheidungen durch datengesteuerte Lösungen zu treffen.</p>
+            <p id="paragraph-pl">Biegle posługuję się narzędziami do analizy danych, takimi jak Python i SQL, wykorzystuję umiejętności analityczne do wyciągania praktycznych wniosków, optymalizacji procesów i podejmowania strategicznych decyzji za pomocą rozwiązań opartych na danych.</p>
+            <a href="#">Learn More</a>
+        </div>
+        <div>
+            <i class="fa-brands fa-intercom"></i>
+            <H2 id="header-en">Customer Service</H2>
+            <H2 id="header-fr">Service client</H2>
+            <H2 id="header-es">Servicio al cliente</H2>
+            <H2 id="header-ar">خدمة العملاء</H2>
+            <H2 id="header-de">Kundendienst</H2>
+            <H2 id="header-pl">Obsługa klienta</H2>
+            <p id="paragraph-en">Experienced in delivering exceptional customer service, I excel in resolving inquiries promptly, cultivating positive relationships, and ensuring customer satisfaction through effective communication and problem-solving skills.</p>
+            <p id="paragraph-fr">Expérimenté dans la fourniture d'un service client exceptionnel, j'excelle dans la résolution rapide des demandes de renseignements, dans l'entretien de relations positives et dans la garantie de la satisfaction des clients grâce à des compétences efficaces en communication et en résolution de problèmes.</p>
+            <p id="paragraph-es">Con experiencia en brindar un servicio al cliente excepcional, me destaco en resolver consultas con prontitud, cultivar relaciones positivas y garantizar la satisfacción del cliente a través de una comunicación efectiva y habilidades de resolución de problemas.</p>
+            <p id="paragraph-ar">من ذوي الخبرة في تقديم خدمة عملاء استثنائية، وأنا أتفوق في حل الاستفسارات على الفور، وتنمية العلاقات الإيجابية، وضمان رضا العملاء من خلال التواصل الفعال ومهارات حل المشكلات.</p>
+            <p id="paragraph-de">Ich habe Erfahrung in der Bereitstellung außergewöhnlichen Kundenservices und bin besonders gut darin, Anfragen umgehend zu lösen, positive Beziehungen zu pflegen und die Kundenzufriedenheit durch effektive Kommunikation und Problemlösungsfähigkeiten sicherzustellen.</p>
+            <p id="paragraph-pl">Mam doświadczenie w zapewnianiu wyjątkowej obsługi klienta. Wyróżniam się szybkim rozwiązywaniem zapytań, utrzymywaniem pozytywnych relacji i zapewnianiem satysfakcji klientów poprzez skuteczną komunikację i umiejętności rozwiązywania problemów.</p>
+            <a href="#">Learn More</a>
+        </div>
+       </div>
+    </div>
+</div>
+<!--------------portfolio---------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="worklist">
+            <div class="work">
+                <img src="images/Data_Analystim.avif">
+                <div class="layer">
+                    <h3>Data Analyst</h3>
+                    <p> this will direct you to my page</p>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/data-entry.webp">
+                <div class="layer">
+                    <h3>Data Entry</h3>
+                    <p> this will direct you to my page</p>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/customer-service.webp">
+                <div class="layer">
+                    <h3>Customer Service</h3>
+                    <p> this will direct you to my page</p>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+
+    </div>
+</div>
+<!-------------contact---------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>Lesleysango2@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>+48 508 621 131</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100094187913594"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/king_kunta21"><i class="fa-brands fa-twitter"></i></i></a>
+                    <a href="https://www.instagram.com/king_lesley_/"><i class="fa-brands fa-instagram"></i></i></a>
+                    <a href="https://www.linkedin.com/in/lesley-sango-143474299/"><i class="fa-brands fa-linkedin"></i></i></i></a>
+                </div>
+                <a href="images/Update CV (Lesley).pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required autocomplete="on">
+                    <input type="email" name="Email" placeholder="Your Email" required autocomplete="on">
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+                
+            </div>
+        </div>
+        <iframe
+            width="400"
+            height="225"
+            style="border: 0"
+            loading="lazy"
+            allowfullscreen
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2462.7743833089565!2d16.989592308364923!3d51.11877637922392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fecd8ac7f44e9%3A0x1a5cb54e365f90dd!2sAmaterasu%20Clothing!5e0!3m2!1sen!2suk!4v1649029861777!5m2!1sen!2suk"
+          ></iframe>
+
+    </div>
+    <a href="gallery.html" class="btn">View Gallery Slideshow</a></li>
+    <div class="copyright">
+        <p> Copyright © Lesley.<i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove('active-link');
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove('active-tab');
+        }
+        event.currentTarget.classList.add('active-link');
+        document.getElementById(tabname).classList.add('active-tab')
+        
+
+    }
+
+
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    
+    function  openmenu(){
+        sidemenu.style.right = "0";
+    }
+    
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    
+
+</script>
+<!---------database for contact section-------->
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzvOZ012RHQFBVpTdeVJ8E6J3yUxKQ55xvY8i-0muUTcbOAeULfsJPCE1jBJih82wh_/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg =document.getElementById('msg')
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent Successfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  <!-------language section--------->
+  <script>
+   // Function to handle language selection change
+document.getElementById('language-select').addEventListener('change', function() {
+    var selectedLanguage = this.value;
+    var languages = ['en', 'fr', 'es', 'ar', 'de', 'pl']; // Add new languages here
+
+    // Hide all content by default
+    languages.forEach(function(language) {
+        document.querySelectorAll('[id^="header-' + language + '"]').forEach(function(element) {
+            element.style.display = 'none';
+        });
+        document.querySelectorAll('[id^="about-text-' + language + '"]').forEach(function(element) {
+            element.style.display = 'none';
+        });
+        document.querySelectorAll('[id^="paragraph-' + language + '"]').forEach(function(element) {
+            element.style.display = 'none';
+        });
+        document.querySelectorAll('[id^="list-' + language + '"]').forEach(function(element) {
+            element.style.display = 'none';
+        });
+        // Add more content types as needed
+    });
+
+    // Show content for selected language
+    document.querySelectorAll('[id^="header-' + selectedLanguage + '"]').forEach(function(element) {
+        element.style.display = 'block';
+    });
+    document.querySelectorAll('[id^="about-text-' + selectedLanguage + '"]').forEach(function(element) {
+        element.style.display = 'block';
+    });
+    document.querySelectorAll('[id^="paragraph-' + selectedLanguage + '"]').forEach(function(element) {
+        element.style.display = 'block';
+    });
+    document.querySelectorAll('[id^="list-' + selectedLanguage + '"]').forEach(function(element) {
+        element.style.display = 'block';
+    });
+    // Add more content types as needed
+});
+
+// Initial call to set default language
+document.getElementById('language-select').dispatchEvent(new Event('change'));
+
+  </script>
+    
+
+
+</body>
+</html>

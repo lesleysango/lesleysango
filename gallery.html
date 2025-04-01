@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesley's Gallery</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="index" href="index.html">
+    <script src="https://kit.fontawesome.com/265a4c6947.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bgAnimation" id="bgAnimation">
+        <div class="backgroundAmim">
+            
+        </div>
+    </div>
+    
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/GALLERY (1).png" class="logo">
+                <ul id="sidemenu">
+
+                    <li><a href="index.html#header">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#portfolio">Portfolio</a></li>
+                    <li><a href="index.html#contact">Contact</a></li> 
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+
+            
+            </nav>
+    <div class="slider">
+        
+        <div class="list">
+            <div class="item">
+                <img src="https://images.unsplash.com/photo-1713145997711-f18e9b079059?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Flower">
+            </div>
+            <div class="item">
+                <img src="https://images.unsplash.com/photo-1713007267005-e677cbe065ce?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Kid's Playing">
+            </div>
+            <div class="item">
+                <img src="https://images.unsplash.com/photo-1642510970871-bcd9753d409c?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Busy Streets">
+            </div>
+            <div class="item">
+                <img src="https://images.unsplash.com/photo-1712781797301-ec9ee12b52b4?q=80&w=1858&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Rainy Day">
+            </div>
+            <div class="item">
+                <img src="https://images.unsplash.com/photo-1712781797301-ec9ee12b52b4?q=80&w=1858&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Rainy Day">
+            </div>
+            
+            
+        </div>
+        <div class="buttons">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <ul class="dots">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        
+    </div>
+    <!-----Social Media----------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100094187913594"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/king_kunta21"><i class="fa-brands fa-twitter"></i></i></a>
+                        <a href="https://www.instagram.com/king_lesley_/"><i class="fa-brands fa-instagram"></i></i></a>
+                        <a href="https://www.linkedin.com/in/lesley-sango-143474299/"><i class="fa-brands fa-linkedin"></i></i></i></a>
+                    </div>
+                
+           
+            
+    
+    </div>
+    <footer>
+        <p> Copyright © Lesley.<i class="fa-solid fa-heart"></i></p>
+      </footer>
+   </body>
+</html>
+
+<script>
+
+let slider = document.querySelector('.slider .list');
+let items = document.querySelectorAll('.slider .list .item');
+let next = document.getElementById('next');
+let prev = document.getElementById('prev');
+let dots = document.querySelectorAll('.slider .dots li');
+
+let lengthItems = items.length - 1;
+let active = 0;
+next.onclick = function(){
+    active = active + 1 <= lengthItems ? active + 1 : 0;
+    reloadSlider();
+}
+prev.onclick = function(){
+    active = active - 1 >= 0 ? active - 1 : lengthItems;
+    reloadSlider();
+}
+let refreshInterval = setInterval(()=> {next.click()}, 3000);
+function reloadSlider(){
+    slider.style.left = -items[active].offsetLeft + 'px';
+    // 
+    let last_active_dot = document.querySelector('.slider .dots li.active');
+    last_active_dot.classList.remove('active');
+    dots[active].classList.add('active');
+
+    clearInterval(refreshInterval);
+    refreshInterval = setInterval(()=> {next.click()}, 3000);
+
+    
+}
+
+dots.forEach((li, key) => {
+    li.addEventListener('click', ()=>{
+         active = key;
+         reloadSlider();
+    })
+})
+window.onresize = function(event) {
+    reloadSlider();
+};
+
+</script>
+
+<script>
+    const bgAnimation = document.getElementById('bgAnimation');
+
+const numberOfColorBoxes = 400;
+
+for (let i = 0; i < numberOfColorBoxes; i++) {
+    const colorBox = document.createElement('div');
+    colorBox.classList.add('colorBox');
+    bgAnimation.append(colorBox)
+}
+</script>
