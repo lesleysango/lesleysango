@@ -1,34 +1,32 @@
-Here’s a short description of the tools I used and the elements in MY web project:
+Tools Used
 
-Tools Used:
-HTML: The structure of your website, organizing content into sections such as Home, About, Services, Portfolio, and Contact.
+HTML: Structured the website with sections (Home, About, Services, Portfolio, Contact).
 
-CSS: For styling the website with a modern, clean design. Used to customize the layout, typography, colors, and responsive design.
+CSS: Styled layout, colors, fonts, and ensured responsive design.
 
-JavaScript: Added interactivity, such as the language switcher and tab content toggling. Also used for form submission handling.
+JavaScript: Added interactivity (language switcher, tab toggling, form handling).
 
-FontAwesome: Used for icons (e.g., social media links, portfolio icons) that enhance the website's visual appeal.
+FontAwesome: Integrated icons for social links and portfolio visuals.
 
-Google Sheets API: Integrated for form submissions, allowing users to send messages directly to a Google Sheet.
+Google Sheets API: Collected form submissions directly into Google Sheets.
 
-Google Fonts: To import custom fonts like Bebas Neue, giving the site a unique typography.
+Google Fonts: Applied custom typography (e.g., Bebas Neue).
 
-Key Elements:
-Header Section: Includes a navigation bar, logo, and a greeting message.
+Key Features
 
-About Section: Introduces you, Lesley, with information on your skills, experience, and education. It also features tabbed content for easy navigation between sections.
+Header: Navigation bar, logo, greeting.
 
-Services Section: Highlights your skills in Web Design, Data Analysis, and Customer Service, using interactive boxes with icons and descriptions.
+About: Profile with skills, education, and tabbed content.
 
-Portfolio Section: Displays images of your work with hover effects, linking to external platforms like LinkedIn.
+Services: Interactive boxes highlighting Web Design, Data Analysis, Customer Service.
 
-Contact Section: Contains a contact form for users to send inquiries and links to your social media profiles.
+Portfolio: Project gallery with hover effects and external links.
 
-Language Switcher: A dropdown menu allows users to toggle between languages (English, French, Spanish, Arabic, German, Polish) to view content in their preferred language.
+Contact: Form linked to Google Sheets + social media links.
 
-Responsive Design: The website adjusts seamlessly for different screen sizes, ensuring a user-friendly experience on mobile devices.
+Language Switcher: Supports multiple languages (EN, FR, ES, AR, DE, PL).
 
-This combination of tools and elements provides a dynamic, engaging user experience while ensuring the site is functional, visually appealing, and accessible to a wide audience.
+Responsive Design: Optimized for desktop and mobile.
 <!---
 lesleysango/lesleysango is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
